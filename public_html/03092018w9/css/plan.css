@@ -5,11 +5,11 @@ body{
 	overflow:auto;
 	margin:0}
 .tabtytul{ /* tabelka z grafik¹ (nag³ówek) */
-	background-color:#80c2ab;
+	background-color:#808080;
 	border-bottom:2px solid #808080}
 .tytul{ /* komórka z tytu³em */
 	background-color:#B22222;
-	color:#FF4500;
+	color:#808080;
 	height:80px;
 	font:bold 36px verdana,sans-serif;
 	border-bottom:2px solid #c0c0c0;
@@ -17,16 +17,16 @@ body{
 .tytulnapis{ /* tytu³ strony z cieniem (tylko IE) */
 	padding-left:10px;width:400px;height:60px;filter:Shadow(Color=#666666,Direction=150)}
 .tabela{ /* tabela z planem */
-	border-color:#c0c0c0}
+	border-color:##808080}
 td{
 	font-size:11px}
 th{
 	background-color:#bddfd0;
-	color:#000099;
+	color:#808080;
 	font-size:13px}
 td.g{ /* godzina */
 	background-color:#eaf4f0;
-	color:#000099;
+	color:#808080;
 	font-weight:bold;
 	vertical-align:top;
 	text-align:center;
