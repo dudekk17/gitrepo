@@ -1,6 +1,5 @@
 <?php
 
-
 define ('DINC', 'inc/');
 define ('DBASE', 'baza/');
 $dbfile = 'db.sqlite3';
@@ -15,6 +14,8 @@ else
  $id='witam';
 
 include_once(DINC. 'template.php');
+
+
 
 ?>
 
