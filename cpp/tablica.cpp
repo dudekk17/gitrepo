@@ -1,6 +1,5 @@
 /*
  * tablica.cpp
- * 
  */
 
 
@@ -10,7 +9,7 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-	int rozmiar = 5;
+	int rozmiar = 20;
     int tablica[19]; // wskazuje pierwsza komorke
     int i = 0;
     cout << "Podaj 20 liczb:" << endl;
@@ -18,7 +17,7 @@ int main(int argc, char **argv)
     for(i=0; i<rozmiar; i++){
     cin >> tablica[i];
    }
-    for(i=0; i<rozmiar; i++){
+    for(i= 0 + rozmiar; i<rozmiar; i--){
     cout << tablica[i] << " ";    
         
     }
