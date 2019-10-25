@@ -27,7 +27,7 @@ void koduj(char tabzn[], int rozmiar) {
    }
 }   
 
-void dekoduj(int kod[], int rozmiar) {
+void dekoduj(int kod[], int rozmiar, int tabzn[], int szyfr) {
      for (int i = 0; i < rozmiar; i++) {
         cout << tabzn[i] << " " << (char)tabzn[i] << endl;    
    }
@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     koduj(tekst, rozmiar);
     
     //int szyfr[11] = {65, 78, 90};
-    char szyfr[24]={77 105 32 103 97 116 111 32 115 101 32 108 108 97 109 97 32 74 117 114 103 101 110}
+    char szyfr[24]={77,105,32,103,97,116,111,32,115,101,32,108,108,97,109,97,32,74,117,114,103,101,110};
 
     dekoduj(szyfr, rozmiar);
     
