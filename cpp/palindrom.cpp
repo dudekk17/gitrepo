@@ -20,10 +20,10 @@ bool czy_palindrom(char tab[]){
 }
 
 void removeSpaces(char tab1[], char tab2[]){
-    int rozmiar = strlen(tab);
+    int rozmiar = strlen(tab1);
     for(int i = 0; i < rozmiar; i++){
         if (tab1[i] !=' '){
-            tab2[i} = tab1[i]
+            tab2[i] = tab1[i];
             }
         }
     
