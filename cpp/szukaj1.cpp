@@ -17,7 +17,7 @@ int szukaj_it(int liczby[], int ile, int n){
 
 int szukaj_re(int liczby[], int lewy,  int prawy, int n) {
     if (lewy > prawy) {
-        cout << "Elementu nie znalziono" << endl;
+        cout << "Elementu nie znaleziono" << endl;
         return -1;
         }
         else {
@@ -32,8 +32,8 @@ int szukaj_re(int liczby[], int lewy,  int prawy, int n) {
 }
 
 int szukaj_rere(int liczby[], int lewy,  int prawy, int n) {
-    if (lewy < prawy) {
-        cout << "Elementu nie znalziono" << endl;
+    if (lewy > prawy) {
+        cout << "Elementu nie znaleziono" << endl;
         return -1;
         }
         else {
@@ -42,7 +42,7 @@ int szukaj_rere(int liczby[], int lewy,  int prawy, int n) {
                 return prawy;
             }
             else {
-            szukaj_rere(liczby, prawy+1, lewy, n);
+            szukaj_rere(liczby, lewy, prawy-1, n);
             }
     }
 }
@@ -55,7 +55,7 @@ int main(int argc, char **argv)
     cout << "Podaj szukany element: " <<  endl;
     cin >> n;
     //int indeks = szukaj_it(liczby, 7, n);
-    int indeks = szukaj_rere(liczby, 0, 7, n);
+    int indeks = szukaj_rere(liczby, 0, 6, n);
     if (indeks > -1) {
        cout << liczby[indeks] << endl;
 	}
