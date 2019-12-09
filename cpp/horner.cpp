@@ -25,6 +25,20 @@ float horner_it(int n, float tbwsp[], float x) {
       return wynik;
 }
 
+//W(x) = 2x^3 + 3x^2 + 5x + 4
+//W(x) = (2x^2 + 3x + 5)x + 4
+//w(x) = ((2x +3)x + 5)x + 4 
+
+float horner_rere(int n, float tbwsp[], float x){
+    if (n == 0)
+        return tbwsp[0];
+    else 
+        return horner_rere(n-1, tbwsp, x) * x + tbwsp[n];
+
+}
+
+
+
 int main(int argc, char **argv)
 {
 	int n = 0;           // stopien wielomianu
@@ -42,6 +56,7 @@ int main(int argc, char **argv)
     cout << "Wartość wielomianu o postaci: ";
     drukujw(n,tbwsp);
     cout << horner_it(n, tbwsp, x) << endl;
+    cout << horner_rere(n, tbwsp, x) << endl;
     
     
 	return 0;

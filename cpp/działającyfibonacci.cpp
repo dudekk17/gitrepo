@@ -20,12 +20,23 @@ int fibonacci_it(int n) {
 	}
 	return wynik;
 }
+// f(n) = 1 dla n{0, 1} 
+// f(n) > 1 = f(n-1) + f(n-2)
+int fibonacci_rere(int n){
+    if (n < 2 )
+       return 1;
+    else 
+       return fibonacci_rere(n-1) + fibonacci_rere(n-2);
+}
+
 
 int main(int argc, char **argv)
 {
-	for (int i=0; i < 20; i++) {
+    for (int i=0; i < 20; i++) {
 		cout << i << ": fib(" << fibonacci_it(i-2) << ", " << fibonacci_it(i-1)  << ") =" << fibonacci_it(i) << endl;
 	}
+    
+    
 	return 0;
 }
 
