@@ -7,6 +7,10 @@
 
 using namespace std;
 
+// Ln = 1
+// Ln = n
+// O(n)
+
 int main(int argc, char **argv)
 {
 	int n = 5;

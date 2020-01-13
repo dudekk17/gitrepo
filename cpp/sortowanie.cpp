@@ -64,6 +64,15 @@ void selection_sort(int tab[], int n) {
 // 0, 1, 3, 5, 8, 5, 9
 // 0, 1, 3, 5, 5, 8, 9
 
+dla n liczb = n-1, n-2, n-3, n-...., 1
+S(k) = (a1 + ak) / 2 *k
+a1 = 1
+ak = n - 1
+k = n - 1
+
+Ln = Sk = (1 + n - 1) / 2 * (n-1) = n / 2 * (n - 1) = n^2 - n / 2
+O(n^2)
+
 
 //sortowanie babelkowe
 void bubble_sort(int tab[], int n){
