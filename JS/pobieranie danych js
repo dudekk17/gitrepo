@@ -1,0 +1,12 @@
+<script>
+var a = parseInt(prompt('Podaj bok: '));
+var b = parseInt(prompt('Podaj bok: '));
+var c = parseInt(prompt('Podaj bok: '));
+document.write(a + b + c);
+if (a+b>c && a+c>b && b+c>a){
+    window.alert('Da się!');
+} else {
+    window.alert('Nie da się');
+}
+
+</script>

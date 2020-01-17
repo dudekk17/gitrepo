@@ -1,0 +1,15 @@
+<script>
+
+var dlugosc = 10; //liczba
+var imie = "Ania"; //string/napis
+var tablica = ["Fiat", "Skoda", "Merc"];
+document.write(tablica[1]);
+var osoba = {
+    imie:"Ania", 
+    nazwisko: "Dudiii"
+    wiek: 18
+}; //
+document.write(osoba.imie, osoba.wiek);
+
+
+</script>
