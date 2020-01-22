@@ -1,0 +1,4 @@
+HTML DOM
+obiektowy model dokumentu przedstawiny w postaci drzewa
+drzewo - hierarchiczna struktura danych
+drzewo -> rodzic (parent) -> dzieci (child) / rodzeństwo (sibling) ->
