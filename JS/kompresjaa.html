@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Kompresja danych </title>
+<meta name="generator" content="Geany 1.32" />
+</head>
+
+<body>
+<input type="text" id="Przedkompresja">
+<input type="text" id="Pokompresji">
+<button onclick="Kompresja()">Wpisz</button>
+
+<script type="text/javascript">
+    function Kompresja(){
+        var x = document.getElementById("Przedkompresja").value;
+        var y = document.getElementById("Pokompresji").value;
+        var rc = y/x * 100%;
+            return rc;
+        
+        }
+
+
+</script>    
+
+</body>
+
+</html>
