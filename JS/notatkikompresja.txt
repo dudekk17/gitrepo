@@ -30,5 +30,5 @@ Rc = 142,7/633,6 = 23%
 Rc = (1 - Vk/Vnk) * 100%
 Rc = 77 %
 
-Napisz w domu program który mówi ile miejsca zostało zaoszczedzone.
+PostScript(PS) - 
 
