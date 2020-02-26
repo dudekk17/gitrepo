@@ -13,7 +13,11 @@ $(document).ready(function(){
     $(this).addClass("tloBlue");
   });
   $("input").mouseleave(function(){
-    $(this).removeClass("");
-  //podczas opuszcenia mysza obszaru input
-  //przywroc poprzedni kolor tla
+    $(this).removeClass("tlowhite");
+
+  $("pig1").mouseover(function(){
+    $().hide(200);
+
+  });
+});
 });
