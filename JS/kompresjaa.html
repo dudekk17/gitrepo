@@ -1,28 +1,35 @@
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pl">
 <head>
-    <meta charset="utf-8" />
-    <title>Kompresja danych </title>
-<meta name="generator" content="Geany 1.32" />
+	<meta charset="utf-8" />
+	<title>Kompresja pliku</title>
 </head>
-
 <body>
-<input type="text" id="Przedkompresja">
-<input type="text" id="Pokompresji">
-<button onclick="Kompresja()">Wpisz</button>
+<p id="kompresja"></p>
+<hr>
+<p>Przed kompresją: </p>
+<input type="number" id="Vnk">
+<p>Po kompresji: </p>
+<input type="number" id="Vk">
+<button onclick="displayTxt()">Wpisz</button>
 
-<script type="text/javascript">
-    function Kompresja(){
-        var x = document.getElementById("Przedkompresja").value;
-        var y = document.getElementById("Pokompresji").value;
-        var rc = y/x * 100%;
-            return rc;
-        
-        }
-
-
-</script>    
+<script>
+	//alert(cars.length);
+	//alert(cars[0]);
+	function displayTxt() {
+    var x = document.getElementById("Vk").value;;
+    var y = document.getElementById("Vk").value;
+    var z = y / x *100;
+    //x.innerHTML = "Wpisałeś: " + document.getElementsByTagName("input")[0].value;
+    if (x < y) {
+		document.w("<p>Błędne dane!</p>")
+	}
+	else {
+		document.write("<p>Współczynnik kompresji: "+z+"%</p>");
+    }
+ }
+</script>
 
 </body>
 

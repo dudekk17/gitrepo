@@ -1,0 +1,60 @@
+Aby komunikacja byla mozliwa potrzeba:
+karta siecowa
+interfejs sieciowy - musi miec identyfikator
+LAN - lokalna siec komputerowa
+zeby wyjsc poza LAN trzeba IP
+prywatne adresy IP
+IP v4
+x.x.x.x
+255.255.255.255
+10.0.0.0 - 10.255.255.255
+172.16.0.0 - 172.31.0.0
+192.168.0.0 - 172.168.255.255
+
+internet - siec sieci - 
+adres MAC - numer zapisany za pomaca cyfr 16, kod urzadzenia i producenta 
+
+urzadzenie pozwalajace wyjsc do innych sieci - router
+routery maja przynajmniej 2 interfejsy sieciowe
+
+switch - przelacznik sieciowy, polaczony z routerem,laczy urzadzenia w obrebie jednej sieci
+router laczy sieci
+
+ip v6 (128 bitow)
+ip v4 (32 bity)
+
+model OSI - wyjasnia w jaki sposob poszczegolne urzadzenia sieciowe sie komunikuja
+
+
+najwazniejszy protokol dzialajacy w warstwie transportowej - TCP - kontoluje transport
+
+
+MUX -
+
+sprawdzic adres mac
+adres ip prywatny
+adres ip publiczny tez what is my ip
+adres bramy 
+
+Jak podlaczony jest telewizor
+dekoder nc+
+
+jaki mam router
+nazwa producenta/uslugodawcy
+
+ile gniazd ethernet posiada router i czy ma gniazdo wan
+
+cmd ipconfig - windows 
+
+ipconfig /all
+
+ip addr - linux
+
+tracert - windows
+
+traceroute - lin
+
+
+netstat -natp
+
+
