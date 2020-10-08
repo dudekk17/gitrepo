@@ -1,0 +1,25 @@
+DROP TABLE IF EXISTS tbOddzialy;
+CREATE TABLE tbOddzialy (
+    id           INTEGER NOT NULL
+                         PRIMARY KEY,
+    oznaczenie CHAR(3),
+    rok_naboru CHAR(4),
+    rok_matury CHAR(4),
+);
+
+DROP TABLE IF EXISTS tbUczniowie;
+CREATE TABLE tbUczniowie (
+    id           INTEGER NOT NULL
+                         PRIMARY KEY,
+    imie         TEXT,
+    nazwisko     TEXT,
+    plec         CHAR(1) CHECK (plec IN ("K", "M")),
+    data_ur      DATE,
+    awatar       BLOB,
+    egzamin      INTEGER,
+    srednia_ocen DECIMAL,
+    uwagi        TEXT
+    klasa_id INTEGER,
+    FOREIGN KEY (klasa_id) REFERENCES tbOddzialy (id) ON DELETE SET NULL
+
+);
